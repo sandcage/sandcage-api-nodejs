@@ -1,0 +1,8 @@
+{
+  "name": "sandcage",
+  "version": "0.0.1",
+  "dependencies": {
+    "request": "^2.75.0",
+    "request-promise": "^4.1.1"
+  }
+}
