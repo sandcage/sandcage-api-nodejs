@@ -27,10 +27,10 @@ const sandcage = new SandCage('[YOUR SANDCAGE API KEY]');
 sandcage
   .listFiles({})
   .then((response) => {
-    // TODO: handle response here
+    console.log(response);
   })
   .catch((err) => {
-    // TODO: handle err here
+    console.error(err);
   });
 ```
 
@@ -38,8 +38,8 @@ or with callbacks
 
 ```javascript
 const sandcage = new SandCage('[YOUR SANDCAGE API KEY]');
-sandcage.listFiles({}, function(err, resp) {
-  console.log(resp);
+sandcage.listFiles({}, function(err, response) {
+  console.log(response);
 })
 ```
 
