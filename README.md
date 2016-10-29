@@ -2,9 +2,6 @@
 
 ![SandCage](https://d18m5nnl28b2pp.cloudfront.net/p/a/img/header.png)
 
-[![Scrutinizer Code Quality](https://scrutinizer-ci.com/g/sandcage/sandcage-api-nodejs/badges/quality-score.png?b=master)](https://scrutinizer-ci.com/g/sandcage/sandcage-api-nodejs/?branch=master)
-[![Build Status](https://scrutinizer-ci.com/g/sandcage/sandcage-api-nodejs/badges/build.png?b=master)](https://scrutinizer-ci.com/g/sandcage/sandcage-api-nodejs/build-status/master)
-
 sandcage-api-nodejs is a Node.js library for interfacing with SandCage's API. The API documentation can be found at https://www.sandcage.com/docs/0.2/
 
 
