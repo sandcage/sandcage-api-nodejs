@@ -4,4 +4,4 @@
 
 'use strict';
 
-module.exports = require('lib/sandcage');
+module.exports = require('./lib/sandcage');
