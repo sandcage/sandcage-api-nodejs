@@ -1,5 +1,3 @@
-# sandcage-api-nodejs
-
 ![SandCage](https://d18m5nnl28b2pp.cloudfront.net/p/a/img/header.png)
 
 sandcage-api-nodejs is a Node.js library for interfacing with SandCage's API. The API documentation can be found at https://www.sandcage.com/docs/0.2/

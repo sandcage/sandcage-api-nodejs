@@ -1,0 +1,6 @@
+.idea
+node_modules
+test/
+examples/
+.travis.yml
+.scrutinizer.yml

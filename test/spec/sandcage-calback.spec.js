@@ -1,6 +1,3 @@
-/**
- * Created by vedi on 29/10/2016.
- */
 
 'use strict';
 
