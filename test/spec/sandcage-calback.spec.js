@@ -1,15 +1,15 @@
 
 'use strict';
 
-const expect = require('chai').expect;
+var expect = require('chai').expect;
 
-const specHelper = require('../lib/spec-helper');
-const Sandcage = require('../..');
+var specHelper = require('../lib/spec-helper');
+var Sandcage = require('../..');
 
-const RIGHT_KEY = specHelper.RIGHT_KEY;
-const WRONG_KEY = specHelper.WRONG_KEY;
-const REQUEST_ID = 'req_B8r09x8SucENLdGmHD8s08HDZDOEon';
-const JOBS = [
+var RIGHT_KEY = specHelper.RIGHT_KEY;
+var WRONG_KEY = specHelper.WRONG_KEY;
+var REQUEST_ID = 'req_B8r09x8SucENLdGmHD8s08HDZDOEon';
+var JOBS = [
   {
     "url": "http://cdn.sandcage.com/p/a/img/logo.jpg",
     "tasks": [
@@ -49,9 +49,9 @@ const JOBS = [
   }
 ];
 
-const CALLBACK_URL = 'http://www.example.com/callback_url';
+var CALLBACK_URL = 'http://www.example.com/callback_url';
 
-const FILES = [
+var FILES = [
   {
     "reference_id": "40s"
   },
@@ -62,8 +62,8 @@ const FILES = [
 
 describe('Sandcage with callback', () => {
 
-  const sandcage = new Sandcage({apiKey: RIGHT_KEY});
-  const sandcageWithWrongKey = new Sandcage({apiKey: WRONG_KEY});
+  var sandcage = new Sandcage({apiKey: RIGHT_KEY});
+  var sandcageWithWrongKey = new Sandcage({apiKey: WRONG_KEY});
 
   before('init nock', () => {
     specHelper.initNock();

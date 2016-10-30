@@ -1,10 +1,10 @@
 
 'use strict';
 
-const Sandcage = require('..');
+var Sandcage = require('..');
 
-const sandcage = new Sandcage('[YOUR SANDCAGE API KEY]');
-const payload = {
+var sandcage = new Sandcage('[YOUR SANDCAGE API KEY]');
+var payload = {
   'request_id': '[request_id]'
 };
 

@@ -1,11 +1,11 @@
 
 'use strict';
 
-const nock = require('nock');
+var nock = require('nock');
 
-const RIGHT_KEY = '83309-RIGHT_KEY';
-const WRONG_KEY = '83309-WRONG_KEY';
-const BASE_URL = 'https://api.sandcage.com/0.2';
+var RIGHT_KEY = '83309-RIGHT_KEY';
+var WRONG_KEY = '83309-WRONG_KEY';
+var BASE_URL = 'https://api.sandcage.com/0.2';
 
 module.exports = {
   RIGHT_KEY,

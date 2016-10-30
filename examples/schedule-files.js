@@ -1,10 +1,10 @@
 
 'use strict';
 
-const Sandcage = require('..');
+var Sandcage = require('..');
 
-const sandcage = new Sandcage('[YOUR SANDCAGE API KEY]');
-const payload = {
+var sandcage = new Sandcage('[YOUR SANDCAGE API KEY]');
+var payload = {
   jobs: [
     {
       url: 'http://cdn.sandcage.com/p/a/img/logo.jpg',
@@ -46,7 +46,7 @@ const payload = {
   ]
 };
 
-const callbackUrl = '';
+var callbackUrl = '';
 
 sandcage
   .scheduleFiles(payload, callbackUrl)

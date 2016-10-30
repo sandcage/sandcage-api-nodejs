@@ -1,16 +1,16 @@
 
 'use strict';
 
-const Sandcage = require('..');
+var Sandcage = require('..');
 
-const sandcage = new Sandcage('[YOUR SANDCAGE API KEY]');
-const payload = {
+var sandcage = new Sandcage('[YOUR SANDCAGE API KEY]');
+var payload = {
   files: [
     {'reference_id': '[reference_id]'},
     {'file_token': '[file_token]'}
   ]
 };
-const callbackUrl = '';
+var callbackUrl = '';
 
 sandcage
   .destroyFiles(payload, callbackUrl)
