@@ -4,3 +4,4 @@ test/
 examples/
 .travis.yml
 .scrutinizer.yml
+npm-debug.log

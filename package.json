@@ -1,5 +1,5 @@
 {
-  "name": "sandcage",
+  "name": "sandcage-api-nodejs",
   "version": "0.0.1",
   "scripts": {
     "test": "mocha --reporter spec test/spec"
