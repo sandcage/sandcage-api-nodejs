@@ -14,6 +14,6 @@ var callbackUrl = '';
 
 sandcage
   .destroyFiles(payload, callbackUrl)
-  .then((result) => {
+  .then(function(result) {
     console.log(result);
   });

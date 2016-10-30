@@ -13,6 +13,6 @@ var payload = {
 
 sandcage
   .getInfo(payload)
-  .then((result) => {
+  .then(function(result) {
     console.log(result);
   });

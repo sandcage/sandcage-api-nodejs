@@ -10,6 +10,6 @@ var payload = {
 
 sandcage
   .listFiles(payload)
-  .then((result) => {
+  .then(function(result) {
     console.log(result);
   });

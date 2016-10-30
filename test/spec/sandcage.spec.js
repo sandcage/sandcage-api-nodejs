@@ -60,176 +60,176 @@ var FILES = [
   }
 ];
 
-describe('Sandcage', () => {
+describe('Sandcage', function() {
 
   var sandcage = new Sandcage({apiKey: RIGHT_KEY});
   var sandcageWithWrongKey = new Sandcage({apiKey: WRONG_KEY});
 
-  before('init nock', () => {
+  before('init nock', function() {
     specHelper.initNock();
   });
 
-  describe('getInfo', () => {
+  describe('getInfo', function() {
 
     let response;
 
-    before('call getInfo', () => {
+    before('call getInfo', function() {
       return sandcage
         .getInfo({'request_id': REQUEST_ID})
-        .then((result) => {
+        .then(function(result) {
           response = result;
         });
     });
 
-    it('should contain status', () => {
+    it('should contain status', function() {
       return expect(response.status).to.exist;
     });
 
-    it('status should be "success"', () => {
+    it('status should be "success"', function() {
       expect(response.status).to.be.equal('success');
     });
 
-    it('files should be an array', () => {
+    it('files should be an array', function() {
       expect(response.files).to.be.an('array');
     });
   });
 
-  describe('getInfo with wrong key', () => {
+  describe('getInfo with wrong key', function() {
 
     let response;
 
-    before('call getInfo', () => {
+    before('call getInfo', function() {
       return sandcageWithWrongKey
         .getInfo({'request_id': REQUEST_ID})
-        .catch((err) => {
+        .catch(function(err) {
           response = err;
         });
     });
 
-    it('should catch error', () => {
+    it('should catch error', function() {
       return expect(response).to.exist;
     });
   });
 
-  describe('listFiles', () => {
+  describe('listFiles', function() {
 
     let response;
 
-    before('call listFiles', () => {
+    before('call listFiles', function() {
       return sandcage
         .listFiles({directory: 'img/'})
-        .then((result) => {
+        .then(function(result) {
           response = result;
         });
     });
 
-    it('should contain status', () => {
+    it('should contain status', function() {
       return expect(response.status).to.exist;
     });
 
-    it('status should be "success"', () => {
+    it('status should be "success"', function() {
       expect(response.status).to.be.equal('success');
     });
 
-    it('files should be an array', () => {
+    it('files should be an array', function() {
       expect(response.files).to.be.an('array');
     });
   });
 
-  describe('listFiles with wrong key', () => {
+  describe('listFiles with wrong key', function() {
 
     let response;
 
-    before('call listFiles', () => {
+    before('call listFiles', function() {
       return sandcageWithWrongKey
         .listFiles({directory: 'img/'})
-        .catch((err) => {
+        .catch(function(err) {
           response = err;
         });
     });
 
-    it('should catch error', () => {
+    it('should catch error', function() {
       return expect(response).to.exist;
     });
   });
 
-  describe('scheduleTasks', () => {
+  describe('scheduleTasks', function() {
 
     let response;
 
-    before('call scheduleTasks', () => {
+    before('call scheduleTasks', function() {
       return sandcage
         .scheduleFiles({jobs: JOBS}, CALLBACK_URL)
-        .then((result) => {
+        .then(function(result) {
           response = result;
         });
     });
 
-    it('should contain status', () => {
+    it('should contain status', function() {
       return expect(response.status).to.exist;
     });
 
-    it('status should be "success"', () => {
+    it('status should be "success"', function() {
       expect(response.status).to.be.equal('success');
     });
 
-    it('tasks should be an array', () => {
+    it('tasks should be an array', function() {
       expect(response.tasks).to.be.an('array');
     });
   });
 
-  describe('scheduleTasks with wrong key', () => {
+  describe('scheduleTasks with wrong key', function() {
 
     let response;
 
-    before('call scheduleTasks', () => {
+    before('call scheduleTasks', function() {
       return sandcageWithWrongKey
         .scheduleFiles({jobs: JOBS}, CALLBACK_URL)
-        .catch((err) => {
+        .catch(function(err) {
           response = err;
         });
     });
 
-    it('should catch error', () => {
+    it('should catch error', function() {
       return expect(response).to.exist;
     });
   });
 
-  describe('destroyFiles', () => {
+  describe('destroyFiles', function() {
 
     let response;
 
-    before('call destroyFiles', () => {
+    before('call destroyFiles', function() {
       return sandcage
         .destroyFiles({files: FILES}, CALLBACK_URL)
-        .then((result) => {
+        .then(function(result) {
           response = result;
         });
     });
 
-    it('should contain status', () => {
+    it('should contain status', function() {
       return expect(response.status).to.exist;
     });
 
-    it('status should be "success"', () => {
+    it('status should be "success"', function() {
       expect(response.status).to.be.equal('success');
     });
 
   });
 
-  describe('destroyFiles with wrong key', () => {
+  describe('destroyFiles with wrong key', function() {
 
     let response;
 
-    before('call destroyFiles', () => {
+    before('call destroyFiles', function() {
       return sandcageWithWrongKey
         .destroyFiles({files: FILES}, CALLBACK_URL)
-        .catch((err) => {
+        .catch(function(err) {
           response = err;
         });
     });
 
-    it('should catch error', () => {
+    it('should catch error', function() {
       return expect(response).to.exist;
     });
   });

@@ -50,6 +50,6 @@ var callbackUrl = '';
 
 sandcage
   .scheduleFiles(payload, callbackUrl)
-  .then((result) => {
+  .then(function(result) {
     console.log(result);
   });
