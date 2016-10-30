@@ -15,13 +15,13 @@ sandcage-api-nodejs is a Node.js library for interfacing with SandCage's API. Th
 
 
 <a name="requirements" /></a>
-##Requirements
+## Requirements
 
 * A SandCage account, in order to get your SandCage API Key. Once logged into SandCage get your API Key at https://www.sandcage.com/panel/api_key
 
 
 <a name="usage" /></a>
-##Usage
+## Usage
 
 ```javascript
 var sandcage = new SandCage('[YOUR SANDCAGE API KEY]');
@@ -45,7 +45,7 @@ sandcage.listFiles({}, function(err, response) {
 ```
 
 <a name="contribute" /></a>
-##Contributing
+## Contributing
 
 We are open to suggestions and code revisions, however there are some rules and limitations that you might want to consider first.
 
