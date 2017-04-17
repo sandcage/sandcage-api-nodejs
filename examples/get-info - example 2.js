@@ -3,7 +3,7 @@
 
 var Sandcage = require('..');
 
-var sandcage = new Sandcage('[YOUR SANDCAGE API KEY]');
+var sandcage = new Sandcage({apiKey: '[YOUR SANDCAGE API KEY]'});
 var payload = {
   files: [
     {'file_token': '[file_token 1]'},

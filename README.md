@@ -24,9 +24,11 @@ sandcage-api-nodejs is a Node.js library for interfacing with SandCage's API. Th
 ## Usage
 
 ```javascript
-var sandcage = new SandCage('[YOUR SANDCAGE API KEY]');
+var sandcage = new Sandcage({apiKey: '[YOUR SANDCAGE API KEY]'});
 sandcage
-  .listFiles({})
+  .listFiles({
+    'key': '[YOUR SANDCAGE API KEY]'
+  })
   .then(function(response) {
     console.log(response);
   })
